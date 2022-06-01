@@ -1,3 +1,10 @@
+# All the bam files and filtered bam files
+s3://picard_all_bams_B73v5
+
+# picard marked bam files, filtered by mapping quality of 20
+s3://picard_MAPQ20_B73v5
+
+
 # All files are located at dir: /home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome
 
 ## This folder contains subfolders: 
@@ -67,15 +74,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 #############################################################################################
 
 
@@ -83,8 +81,13 @@
 
 /home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp
 /home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/cmd250000  ## gatk cmd to generate SNP calls, this cmd includes 8533 windows to run on widiv
-
-
+# all the indel calls
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_filtered-snps.vcf.gz 
+# all the SNP calls with filtering described in InDel/step4
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_sorted-indels.vcf.recode.vcf.gz
 
 
 #############################################################################################
+
+
+
