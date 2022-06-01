@@ -80,11 +80,22 @@ s3://picard_MAPQ20_B73v5
 ############################### widiv SNP related files  ###############################
 
 /home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp
-/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/cmd250000  ## gatk cmd to generate SNP calls, this cmd includes 8533 windows to run on widiv
+
+## gatk cmd to generate SNP calls, this cmd includes 8533 windows to run on widiv
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/cmd250000  
+
+# variant calls without filtering 
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_sorted.vcf.gz
+
 # all the indel calls
-/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_filtered-snps.vcf.gz 
-# all the SNP calls with filtering described in InDel/step4
 /home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_sorted-indels.vcf.recode.vcf.gz
+
+# all the SNP calls with filtering described in https://github.com/HirschLabUMN/widiv_pangenome/tree/main/InDel, step4
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_filtered-snps.vcf.gz 
+
+# SNP calls without depth filtering
+/home/hirschc1/shared/projects/Yinjie_project/Widiv_pangenome/snp/merged_filtered-snps_no_dp_filter.vcf.gz
+
 
 
 #############################################################################################
