@@ -3,9 +3,13 @@
   "Statement": [
     {
       "Effect": "Allow",
-      "Principal": {"AWS": [ "arn:aws:iam:::user/uid=75512", "arn:aws:iam:::user/uid=" ]},
+      "Principal": {"AWS": [ "arn:aws:iam:::user/uid=75512", "arn:aws:iam:::user/uid=20840" ]},
       "Action": [ "s3:*" ],
       "Resource": ["arn:aws:s3:::picard_MAPQ20_B73v5/*", "arn:aws:s3:::picard_MAPQ20_B73v5"]
     }
   ]
 }
+
+# save that file as s3cmd_policy
+
+s3cmd setpolicy s3cmd_policy s3://picard_MAPQ20_B73v5
